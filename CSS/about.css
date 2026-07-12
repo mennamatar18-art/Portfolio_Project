@@ -49,7 +49,7 @@ h3,li{
 
 
 li{
-    font-style: italic;
+    font-style:oblique;
 }
 
 
@@ -67,12 +67,12 @@ i{
 
 
 .card2{
-    min-height: 250px;
+    min-height: 300px;
 }
 
 
 .card,.card2{
-    width: 60%;
+    width: 50%;
     height: 200px;
     background-color: rgba(92, 125, 163, 0.2);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
@@ -80,12 +80,142 @@ i{
     padding: 25px;
     margin: 30px auto;
     transition: all 0.4s ease;
+    animation: dropDown 0.8s ease forwards;
 }
 
 
 .card:hover,.card2:hover{
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(47, 65, 86, 0.3);
+}
+
+
+.year{
+    color: #121a24;
+    font-weight: bold;
+    margin-right: 8px;
+    font-size: larger;
+}
+
+/* .time {
+    position: relative;
+    margin-left: 30px;
+    padding-left: 30px;
+    width: 45%;
+}
+
+.time::before{
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 0;
+    width: 3px;
+    height: 100%;
+}
+
+.item {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.circle {
+    position: absolute;
+    left: -30px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    background: #78a6bc;
+    border-radius: 50%;
+    border: 3px solid #121a24;
+} */
+
+
+
+/* .card-time{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+} */
+
+
+
+.skill-cards{
+    display: flex;
+}
+.cards {
+    /* background-color: #ebd3c4; */
+    background: linear-gradient(to right,#e3c4b0,#e5d5ca,#F5EFEB);
+    width: 200px;
+    height: 120px;
+    padding: 25px;
+    margin: 30px auto;
+    margin-right: 60px;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 0;
+    animation: dropDown 0.8s ease forwards;
+}
+
+
+.cards:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(47, 65, 86, 0.3);
+}
+
+
+
+
+.skills{
+    color: #2F4156;
+    margin-right: 200px;
+    /* margin-top: 100px; */
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+
+.tria2{
+    width: 70px;
+    height: 5px;
+    background: linear-gradient(to right,#121a24,#3b5473,#78a6bc);
+    margin-left: 600px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    /* margin-top: -3px; */
+}
+
+
+.cards i{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+
+
+.line {
+    height: 5px;
+    width: 80%;
+    background-color: rgba(194, 190, 190, 0.411);
+    border-radius: 15px;
+    margin-top: 200px;
+    margin-left: 100px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.9);
+}
+
+
+@keyframes dropDown{
+    from{
+        opacity:0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
 }
 
 
