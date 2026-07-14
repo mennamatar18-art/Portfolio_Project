@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background-color: #314258;
+  color: #fff;
+  line-height: 1.6;
+}
+.hero-section {
+  min-height: calc(100vh - 78.4px);  
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 5%;
+  overflow: hidden;
+}
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+}
+.hero-content {
+  flex: 1;
+  text-align: center;
+}
+.hero-image {
+  flex: 1.2;   
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+.hero-content h1 {
+  font-size: 45px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.hero-content h2 {
+  font-size: 20px;
+  color: #f5efeb;
+  margin-bottom: 20px;
+}
+.hero-desc {
+  font-size: 16px;
+  color: #ccc;
+  margin: 0 0 30px auto;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+}
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+.btn, .btn-cv:hover{
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.3s;
+  border: 1px solid #567c8d;
+  color: #fff;
+  background-color: #567c8d;
+}
+.btn:hover, .btn-cv {
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.3s;
+  border: 1px solid #567c8d;
+  color: #2f4156;
+  background-color: #c8d9e6;
+}
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 40px 5%;
+    height: auto;
+    min-height: calc(100vh - 120px);
+  }
+  .hero-container {
+    flex-direction: column;
+    height: auto;
+    gap: 30px;
+  }
+  .hero-content {
+    text-align: center;
+  }
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+  }  
+  .btn, .btn-cv {
+    padding: 10px 0px;
+    font-size: 17px;
+    width: 350px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .hero-image {
+    width: 100%;
+    height: 300px;
+  }
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
