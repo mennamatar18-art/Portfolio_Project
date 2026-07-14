@@ -1,38 +1,77 @@
-body{
-    /* background-color: #567c8D; */
-    background-color: #F5EFEB;
+
+:root{
+    --bg-color: #F5EFEB;       /*back the body*/
+    --primary-color: #2F4156;
+    --text-color: #2F4156;       /*h1 , h3 , li, (skills)*/
+    --accent-color: #567c8d;     /*icons , name العلماء اللي اتكلموا عن الان*/
+    --text-secondary: #121a24;    /*years , الكلام اللي في كارت الاخير*/
+    --text-muted: #FFFFFF;       /* words about alan*/
+    --border-color: #121a24;    /* الاراء اللي في الكارت الاخير*/
+
+    --shadow: 0 10px 30px rgba(0,0,0,0.2);
+    --radius: 30px;              /*cards of aboutme , cards of skills, card الكبير بتاع الاراء*/
+    --transition: 0.4s ease;     
 }
 
 
 
+body{
+    /* background-color: #567c8D; */
+    background-color: var(--bg-color);
+}
+
+.title{
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-40px);
+    animation: down 0.8s ease forwards;
+}
+
+.pragOfAbout{
+    text-align: center;
+    margin-right: 100px;
+    opacity: 0;
+    transform: translateY(-40px);
+    animation: down 0.8s ease forwards;
+    animation-delay: 0.4s; 
+}
+
+@keyframes down{
+    from{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pragOfAbout ul{
+    list-style-position: inside;
+    padding-left: 0;
+}
+
 h1{
-    color: #2F4156;
-    margin-left: 90px;
+    color: var(--text-color);
+    /* margin-left: 90px; */
     margin-top: 100px;
     
 }
 
-
+.li01{
+    font-size: 30px;
+}
 
 .tria{
     width: 80px;
     height: 5px;
     background: linear-gradient(to right,#121a24,#3b5473,#78a6bc);
-    margin-left: 100px;
-    border-radius: 10px;
+    margin-left: 700px;
+    border-radius: var(--radius);
     margin-top: -3px;
 }
 
-/* .sec{
-    display: flex;
-    gap: 500px;
-} */
-/* .img{
-    height: 500px;
-    width: 500px;
-    margin-top: 200px;
-    margin-left: 200px;
-} */
 
 
  section{
@@ -44,7 +83,7 @@ h1{
 
 
 h3,li{
-    color: #2F4156;
+    color: var(--text-color);
 }
 
 
@@ -60,83 +99,51 @@ h3{
 
 
 i{
-    color: #567c8d;
+    color: var(--accent-color);      /*accent*/
     margin-right: 10px;
 }
 
 
 
 .card2{
-    min-height: 300px;
+    min-height: 400px;
 }
 
 
-.card,.card2{
-    width: 50%;
+.card,.card2,.card01{
+    width: 500px;
     height: 200px;
     background-color: rgba(92, 125, 163, 0.2);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
+    /* box-shadow: 0 12px 25px rgba(0, 0, 0, 0.05); */
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
     padding: 25px;
     margin: 30px auto;
-    transition: all 0.4s ease;
-    animation: dropDown 0.8s ease forwards;
+    transition: var(--transition);    /*all*/
+    animation: dropDown 0.9s ease forwards; 
+    animation-delay: 1s;
+    opacity: 0;
 }
 
 
-.card:hover,.card2:hover{
+.card:hover,.card2:hover,.card01:hover{
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(47, 65, 86, 0.3);
 }
 
+.card01{
+    margin-top: 150px;
+}
+
 
 .year{
-    color: #121a24;
+    color: var(--text-secondary);       /*text secondary*/ 
     font-weight: bold;
     margin-right: 8px;
     font-size: larger;
 }
 
-/* .time {
-    position: relative;
-    margin-left: 30px;
-    padding-left: 30px;
-    width: 45%;
-}
 
-.time::before{
-    content: "";
-    position: absolute;
-    left: 8px;
-    top: 0;
-    width: 3px;
-    height: 100%;
-}
-
-.item {
-    position: relative;
-    margin-bottom: 35px;
-}
-
-.circle {
-    position: absolute;
-    left: -30px;
-    top: 5px;
-    width: 16px;
-    height: 16px;
-    background: #78a6bc;
-    border-radius: 50%;
-    border: 3px solid #121a24;
-} */
-
-
-
-/* .card-time{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-} */
 
 
 
@@ -151,12 +158,13 @@ i{
     padding: 25px;
     margin: 30px auto;
     margin-right: 60px;
-    border-radius: 30px;
-    transition: all 0.4s ease;
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    border-radius: var(--radius);
+    transition: var(--transition);
+    box-shadow: var(--shadow);
     text-align: center;
     opacity: 0;
     animation: dropDown 0.8s ease forwards;
+    animation-delay: 1.5s;
 }
 
 
@@ -169,12 +177,15 @@ i{
 
 
 .skills{
-    color: #2F4156;
+    color: var(--text-color);
     margin-right: 200px;
     /* margin-top: 100px; */
     text-align: center;
     margin-top: 100px;
     margin-left: 100px;
+    opacity: 0;
+    transform: translateY(-40px);
+    animation: down 0.8s ease forwards;
 }
 
 
@@ -218,4 +229,84 @@ i{
     }
 }
 
+.opinion{
+    width: 90%;
+    height: 600px;
+    background: linear-gradient(to right,#3b5574,#3b5473,#78a6bc);
+    /* background-color: rgba(92, 125, 163, 0.2); */
+    margin-top: 200px;
+    margin-left: 40px;
+    display: flex;
+    gap: 200px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);    /*all*/
+    animation: dropDown 0.8s ease forwards; 
+    opacity: 0;
+    animation-delay: 1.5s;
+}
+
+
+@keyframes dropDown{
+    from{
+        opacity:0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+
+.left{
+    font-size: 50px;
+    letter-spacing: 4px;
+    margin-left: 100px;
+    margin-top: 140px;
+    line-height: 60px;
+    color: var(--text-muted);
+}
+
+
+.right{
+    margin-top: 40px;
+}
+
+.right01,.right02,.right03{
+    /* background-color: #e3c4b0a5; */
+    background-color: #e3c4b0be;
+    width: 700px;
+    height:150px;
+    border-radius: 15px;
+    text-align: center;
+    color: var(--text-secondary);
+    border: 2px solid var(--border-color);
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.right03{
+    min-height:90px;
+}
+
+.p02{
+    color: var(--accent-color);
+}
+
+.p03{
+    color: var(--accent-color);
+    margin-top: -10px;
+}
+
+.quote{
+    font-size: 30px;
+}
+
+
+.continer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
 
