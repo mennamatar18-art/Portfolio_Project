@@ -7,7 +7,7 @@ main{
 .heading{
     display: flex;
     justify-content: space-between;
-    margin: 60px 100px;
+    margin: 60px 100px 40px;
 }
 .heading img{
     width: 400px;
@@ -77,10 +77,15 @@ main{
     margin: 15px;
     width: 30%;
     align-items: center;
-
+    transition: all 0.35s ease;
+    cursor:pointer;
+}
+.project:hover{
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .text{
-margin: 20px 25px;
+margin: 20px 25px 40px;
 
 }
 .project h3{
@@ -94,12 +99,50 @@ margin: 20px 25px;
     font-size: 22px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.text .more{
+.more{
     text-decoration: none;
-    font-size: 25px;
-    border: #567cbd 2px solid;
-    color: #567cbd;
-    padding: 4px 22px;
+    display: inline-block;
+    padding: 8px 25px;
+    border: 2px solid #567cbd;
     border-radius: 5px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #567cbd;
+    font-size: 24px;
+    transition: all .35s ease;
+}
+.more:hover{
+    background: #567cbd;
+    color: white;
+    transform: translateX(8px);
+}
+.timeline h2{
+    font-size: 40px;
+    text-align: center;
+    color: #2f4156;
+}
+.quote{
+    margin: 60px 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2f4156;
+    border-radius:20px ;
+}
+blockquote{
+width: 50%;
+color: white;
+font-size: 30px;
+text-align: center;
+}
+.quotation{
+    color: #567cbd;
+    font-size: 80px;
+}
+blockquote .name{
+    color: #567cbd;
+    display: block;
+    text-align: center;
+}
+
+.quote img{
+    width: 250px;
+    border-bottom-right-radius: 20px;
 }
