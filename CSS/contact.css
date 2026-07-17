@@ -1,0 +1,28 @@
+body {
+    background-color: #314258;
+} 
+
+
+h1{
+
+    padding: 0px,0px 200px 0px;
+    margin: auto;
+    text-align: center;
+    color: #333;
+
+} 
+
+.contact-form {
+    background-color: #1a2e3d;
+    color: white;
+    padding: 30px;
+    width: 400px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+} 
+
+
+.input-group {
+    margin-bottom: 15px;
+}
