@@ -1,5 +1,5 @@
 body {
-    background-color: #314258;
+    background-color: #F5EFEB;
 } 
 
 
@@ -26,3 +26,16 @@ h1{
 .input-group {
     margin-bottom: 15px;
 }
+
+
+
+.button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4a6d7c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px; 
+}   
