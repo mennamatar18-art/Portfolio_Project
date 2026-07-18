@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -25,10 +30,17 @@ ul {
 .nav-links {
   display: flex;
   gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-item {
+  list-style: none;
 }
 .nav-links a {
   color: #2f4156;
   font-weight: 600;
+  text-decoration: none;
 }
 .nav-links a:hover {
   color: #7697a5;
