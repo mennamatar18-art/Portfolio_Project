@@ -91,7 +91,7 @@ body {
 
 @media (max-width: 768px) {
   .hero-section {
-    padding: 40px 5%;
+    padding: 30px 5%;
     height: auto;
     min-height: calc(100vh - 120px);
   }
@@ -103,12 +103,27 @@ body {
   .hero-content {
     text-align: center;
   }
+  .hero-content h1 {
+    font-size: 26px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+  }
+  .hero-content h2 {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
   .hero-buttons {
     display: flex;
     flex-direction: column;
     gap: 12px;
     align-items: center;
     width: 100%;
+  }
+  .hero-desc {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0 auto 20px auto;
   }  
   .btn, .btn-cv {
     padding: 10px 0px;
