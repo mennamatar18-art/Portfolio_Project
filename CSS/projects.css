@@ -43,6 +43,7 @@ main{
     font-size: 40px;
     text-align: center;
     color: #2f4156;
+    margin-bottom:45px;
 }
 .projects{
     display: block;
@@ -114,10 +115,58 @@ margin: 20px 25px 40px;
     color: white;
     transform: translateX(8px);
 }
+.timeline{
+    margin:80px 70px;
+}
 .timeline h2{
     font-size: 40px;
     text-align: center;
     color: #2f4156;
+    margin-bottom:45px;
+}
+.all{
+    display:flex ;
+    justify-content:space-between;
+    position:relative;
+}
+.all::before{
+    content:"";
+    position:absolute;
+    top:35px;
+    left:6%;
+    right:6%;
+    height:2px;
+    background:#2f4156;
+    
+}
+.section{
+    position:relative;
+    z-index:2;
+}
+.icon{
+    width:70px;
+    height:70px;
+    margin:auto;
+    border-radius:50%;
+    background:#567cbd;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:25px;
+    transition: all 0.35s ease;
+    cursor: pointer;
+
+}
+.icon:hover{
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+.section p{
+    text-align: center;
+    line-height: 0.8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .quote{
     margin: 60px 0px;
@@ -144,5 +193,5 @@ blockquote .name{
 
 .quote img{
     width: 250px;
-    border-bottom-right-radius: 20px;
+    border-bottom-right-radius: 20px; 
 }
