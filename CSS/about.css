@@ -132,7 +132,7 @@ i{
     border-radius: var(--radius);
     padding: 25px;
     transition: var(--transition);    
-   animation: dropDown 0.9s ease forwards;  
+    animation: dropDown 0.9s ease forwards;  
     animation-delay: 1s;
     opacity: 0;
 } 
@@ -144,6 +144,14 @@ i{
 }
 
 
+.card ul,.card2 ul,.card01 ul{
+    padding-left: 20px;
+}
+
+
+.card li,.card2 li,.card01 li{
+    margin-bottom: 8px;
+}
 
 
 .year{
