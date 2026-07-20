@@ -51,6 +51,7 @@ main{
 .first-three{
     display: flex;
     justify-content:space-around;
+    margin-bottom: 40px;
 }
 .second-two{
     display: flex;
@@ -195,3 +196,42 @@ blockquote .name{
     width: 250px;
     border-bottom-right-radius: 20px; 
 }
+/* @media screen and (max-width:1024px){
+    main{
+        width: 90%;
+    }
+    .heading{
+        align-items: center;
+        margin: auto;
+    }
+    .featured{
+        margin: auto;
+        font-size: xx-large;
+    }
+    .featured h2{
+        font-size: 60px;
+        margin-top: 80px;
+    }
+    .first-three{
+        height: 100%;
+        margin-bottom: 50px;
+    }
+    .first-three .project{
+        background-color: #2f4156;
+        color: white;
+    }
+    .second-two .project{
+        background-color: #2f4156;
+        color: white;
+    }
+    .timeline{
+      margin: auto;
+    }
+    .timeline h2{
+        font-size: 50px;
+        margin-top: 80px;
+    }
+    .icon:hover{
+        background-color: #2f4156;
+    }
+} */
