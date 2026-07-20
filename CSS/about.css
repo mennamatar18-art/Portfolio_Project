@@ -66,6 +66,10 @@ section{
     padding-left: 0;
 }
 
+.pragOfAbout h3{
+    margin-bottom: 20px;
+}
+
 h1{
     color: var(--text-color);
     margin-top: 100px;
