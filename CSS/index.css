@@ -1,8 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: sans-serif;
   background-color: #314258;
   color: #fff;
-  line-height: 1.6;
 }
 .hero-section {
   min-height: calc(100vh - 78.4px);  
@@ -56,6 +60,7 @@ body {
   justify-content: center;
 }
 .btn, .btn-cv:hover{
+  text-decoration: none;
   padding: 10px 25px;
   border-radius: 5px;
   font-weight: bold;
@@ -66,6 +71,7 @@ body {
   background-color: #567c8d;
 }
 .btn:hover, .btn-cv {
+  text-decoration: none;
   padding: 10px 25px;
   border-radius: 5px;
   font-weight: bold;
@@ -85,7 +91,7 @@ body {
 
 @media (max-width: 768px) {
   .hero-section {
-    padding: 40px 5%;
+    padding: 30px 5%;
     height: auto;
     min-height: calc(100vh - 120px);
   }
@@ -97,12 +103,27 @@ body {
   .hero-content {
     text-align: center;
   }
+  .hero-content h1 {
+    font-size: 26px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+  }
+  .hero-content h2 {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
   .hero-buttons {
     display: flex;
     flex-direction: column;
     gap: 12px;
     align-items: center;
     width: 100%;
+  }
+  .hero-desc {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0 auto 20px auto;
   }  
   .btn, .btn-cv {
     padding: 10px 0px;
