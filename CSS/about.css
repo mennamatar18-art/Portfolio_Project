@@ -13,7 +13,6 @@
 }
 
 
-
 body{
     background-color: var(--bg-color);
     margin: 0;
@@ -78,6 +77,7 @@ h1{
 
 .li01{
     font-size: 30px;
+    color: var(--accent-color);
 }
 
 .tria{
@@ -97,10 +97,6 @@ h3,li{
     color: var(--text-color);
 }
 
-
-li{
-    font-style:oblique;
-}
 
 
 h3{
@@ -123,6 +119,11 @@ i{
     gap: 25px;
     margin-top: 40px
 } 
+
+
+.continer h3{
+    margin-bottom: 20px;
+}
 
 
 
@@ -257,7 +258,7 @@ i{
     transition: var(--transition);   
     animation: dropDown 0.8s ease forwards; 
     opacity: 0;
-    animation-delay: 1.5s; 
+    animation-delay: 2s; 
 }
 
 
