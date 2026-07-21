@@ -196,42 +196,169 @@ blockquote .name{
     width: 250px;
     border-bottom-right-radius: 20px; 
 }
-/* @media screen and (max-width:1024px){
-    main{
-        width: 90%;
-    }
-    .heading{
-        align-items: center;
-        margin: auto;
-    }
-    .featured{
-        margin: auto;
-        font-size: xx-large;
-    }
-    .featured h2{
-        font-size: 60px;
-        margin-top: 80px;
-    }
-    .first-three{
-        height: 100%;
-        margin-bottom: 50px;
-    }
-    .first-three .project{
-        background-color: #2f4156;
-        color: white;
-    }
-    .second-two .project{
-        background-color: #2f4156;
-        color: white;
-    }
-    .timeline{
-      margin: auto;
-    }
-    .timeline h2{
-        font-size: 50px;
-        margin-top: 80px;
-    }
-    .icon:hover{
-        background-color: #2f4156;
-    }
-} */
+
+@media (max-width:1024px){
+main{
+    margin:30px;
+}
+.heading{
+    margin:40px 30px;
+    align-items:center;
+    gap:30px;
+}
+
+.heading h1{
+    font-size:55px;
+}
+
+.heading img{
+    width:300px;
+}
+
+.heading pre{
+    font-size:18px;
+}
+.featured{
+    margin:20px;
+}
+
+.featured h2,
+.timeline h2{
+    font-size:45px;
+}
+.first-three{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.first-three .project{
+    width:45%;
+}
+.first-three .project:last-child{
+    width:90%;
+}
+.second-two{
+    justify-content:center;
+}
+
+.second-two .project{
+    width:45%;
+}
+.project h3{
+    font-size:30px;
+}
+
+.project p{
+    font-size:20px;
+}
+.more{
+    font-size:20px;
+}
+.timeline{
+    margin:70px 20px;
+}
+.icon:hover{
+    background-color: #2f4156;
+}
+.quote{
+    padding:0px;
+}
+
+blockquote{
+    width:60%;
+    font-size:24px;
+}
+
+.quote img{
+    width:200px;
+}
+}
+
+
+@media (max-width:768px){
+main{
+    margin:15px;
+}
+.heading{
+    text-align:center;
+    margin:50px 0px 20px;
+}
+
+.heading img{
+    width:250px;
+}
+
+.heading h1{
+    font-size:42px;
+}
+
+.line{
+    margin:20px auto;
+}
+
+.heading pre{
+    font-size:18px;
+    white-space:pre-wrap;
+}
+.featured{
+    margin:0;
+}
+
+.featured h2,
+.timeline h2{
+    font-size:45px;
+}
+.first-three,
+
+.second-two{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+.project,
+.second-two .project,
+.first-three .project,
+.first-three .project:last-child{
+
+    width:90%;
+    margin:15px 0;
+}
+
+.project img{
+    height:220px;
+}
+
+.project h3{
+    font-size:30px;
+}
+
+.project p{
+    font-size:20px;
+}
+
+.more{
+    font-size:18px;
+}
+.timeline{
+    margin: 40px;
+}
+.all{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:30px;
+}
+.all::before{
+    display:none;
+}
+blockquote{
+    white-space:pre-wrap;
+    width:50%;
+    font-size:20px;
+}
+.quote img{
+    width:200px;
+    padding-top: 50px;
+}
+}
