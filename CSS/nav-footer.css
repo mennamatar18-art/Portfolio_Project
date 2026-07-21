@@ -1,9 +1,11 @@
-* {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 .header {
+  margin: 0;
+  box-sizing: border-box;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -15,6 +17,9 @@
   transition: all 0.3s ease;
 }
 .navbar {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,6 +27,9 @@
 }
 
 .logo{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     display: inline-block;
     color: #2F4156;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
@@ -34,6 +42,9 @@
 }
 
 .logo a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: sans-serif;
   font-size: 25px;
   font-weight: bold;
@@ -42,6 +53,9 @@
   text-decoration: none;
 }
 .nav-links {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   display: flex;
   gap: 20px;
   list-style: none;
@@ -50,6 +64,9 @@
   list-style: none;
 }
 .nav-links a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: sans-serif;
   font-size: 18px;
   color: #2f4156;
@@ -61,6 +78,7 @@
 }
 
 .footer {
+  margin: 0;
   padding: 25px 5% 15px 5%;
   width: 100%;
   box-sizing: border-box;
@@ -69,6 +87,9 @@
   box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.08);
 }
 .footer-content {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -77,6 +98,9 @@
   width: 100%;
 }
 .footer-quote {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   flex: 1.2;
   font-size: 16px;
   line-height: 1.5;
@@ -85,6 +109,8 @@
   font-style: italic;
 }
 .footer-quote span {
+  padding: 0;
+  box-sizing: border-box;
   font-family: sans-serif;
   display: block;
   font-size: 16px;
@@ -96,6 +122,8 @@
 
 .copyright {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   flex: 1;
   line-height: 1.5;
   font-family: sans-serif;
