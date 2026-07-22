@@ -84,10 +84,11 @@ button:hover {
 .info-box {
     background-color: #e8e3d8; 
     padding: 30px;
-    width: 400px;
+    width:300px;
     border-radius: 10px;
     border: 1px solid #dcd7cc;
-    margin-left:1000px;
+    margin-left:700px;
+
 }
 
 .item {
