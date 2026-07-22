@@ -197,7 +197,7 @@ blockquote .name{
     border-bottom-right-radius: 20px; 
 }
 
-@media (max-width:1300px){
+@media (max-width:1024px){
 main{
     margin:30px;
 }
@@ -275,21 +275,22 @@ blockquote{
 }
 
 
-@media (max-width:950px){
+@media (max-width:768px){
 main{
     margin:15px;
 }
 .heading{
+    justify-content: center;
     text-align:center;
     margin:50px 0px 20px;
 }
 
 .heading img{
-    width:250px;
+    display: none;
 }
 
 .heading h1{
-    font-size:42px;
+    font-size:45px;
 }
 
 .line{
@@ -358,7 +359,7 @@ blockquote{
     font-size:20px;
 }
 .quote img{
-    width:200px;
+    width:35%;
     padding-top: 50px;
 }
 }
