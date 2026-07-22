@@ -121,7 +121,7 @@ h3 {
 
 
 .info-box:hover {
-    margin-bottom: 200px;
+    margin-bottom: 20px;
     background-color: #dcd7cc; 
     transition: background-color 0.3s ease;
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
@@ -131,13 +131,25 @@ h3 {
     font-size: 20px;
     color: white;
     margin-bottom: 50px;
-    font-weight:
+    font-weight: bold;
 } 
 
 
-@media (max-width: 1000px) {
+@media (max-width: 790px) {
     .contact-form, .info-box,  {
         width: 90%;
         padding: 20px;
     }
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+main {
+    flex: 1; 
 }
