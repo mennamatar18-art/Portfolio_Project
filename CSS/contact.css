@@ -45,7 +45,7 @@ button {
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    margin-top: 50px; 
+    margin-top: 35px; 
     transition: background-color 0.3s ease;
 
 }   
@@ -96,12 +96,7 @@ button:hover {
     margin-bottom: 25px;
 }
 
-.item i {
-    font-size: 20px;
-    margin-right: 15px;
-    margin-top: 5px;
-    color: #4a5d6e;
-}
+
 
 .label {
     display: block;
@@ -120,12 +115,13 @@ button:hover {
 h3 {
     margin-top: 50px;
     color: #333;
-    margin-left: 950px;
+    margin-left: 970px;
     font-size: 30px;
 } 
 
 
 .info-box:hover {
+    margin-bottom: 200px;
     background-color: #dcd7cc; 
     transition: background-color 0.3s ease;
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
@@ -135,5 +131,13 @@ h3 {
     font-size: 20px;
     color: white;
     margin-bottom: 50px;
-    font-weight:;
+    font-weight:
+} 
+
+
+@media (max-width: 1000px) {
+    .contact-form, .info-box,  {
+        width: 90%;
+        padding: 20px;
+    }
 }
