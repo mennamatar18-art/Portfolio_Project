@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Alan Turing was a pioneering mathematician, computer scientist, and cryptanalyst. He is widely considered to be the father of theoretical computer science and artificial intelligence."
+      content="Alan Turing was a pioneering mathematician, computer scientist, and cryptanalyst."
     />
     <link
       rel="stylesheet"
@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="CSS/nav-footer.css" />
     <link rel="stylesheet" href="CSS/contact.css" />
-    <title>Alan Turing-Contact</title>
+    <title>Alan Turing - Contact</title>
   </head>
   <body>
     <header class="header">
@@ -29,70 +29,68 @@
         </ul>
       </nav>
     </header>
-    <main>
- 
- <h1>Get In Touch</h1>  
 
- <main>
- 
- <form class="contact-form"> 
- <P class="form-info">Contact Information Form</P>
+    <main class="main-container">
+      <h1>Get In Touch</h1>
 
+      <!-- كونتينر بيجمع الفورم والمعلومات عشان الـ Flexbox -->
+      <div class="contact-wrapper">
+        <form class="contact-form">
+          <p class="form-info">Contact Information Form</p>
 
-<div class="input-group"> 
-     <label>FULL NAME</label><br>
- <input type="text" id="name" required placeholder="Sam Walker"><br>
-    </div>
+          <div class="input-group">
+            <label for="name">FULL NAME</label>
+            <input type="text" id="name" required placeholder="Sam Walker" />
+          </div>
 
-<div class="input-group">
- <label>Email</label><br>
- <input type="email" id="email" required placeholder="You@example.com"><br>
-</div> 
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required placeholder="You@example.com" />
+          </div>
 
- <div class="input-group">
- <label>Phone</label><br>
- <input type="tel" id="phone" required placeholder="Phone No"><br>
- </div> 
+          <div class="input-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" required placeholder="Phone No" />
+          </div>
 
- <div class="input-group">
- <label>Message</label><br>
- <input type="text" id="message" required placeholder="Write Your Message Here.."><br>
- </div>
-  <button type="submit">Submit</button>
+          <div class="input-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" required placeholder="Write Your Message Here.."></textarea>
+          </div>
 
- </form>
- </main>
+          <button type="submit">Submit</button>
+        </form>
 
- <h3>Contact Details</h3>
-
-
-    <div class="info-box">
-    <div class="item">
-        <i class="mail"></i>
-        <div>
-         
-         <span class="label">EMAIL</span>
-            <p>alan.turing1912@gmail.com</p>
+        <div class="contact-details-container">
+          <h3>Contact Details</h3>
+          <div class="info-box">
+            <div class="item">
+              <i class="fa-solid fa-envelope mail"></i>
+              <div>
+                <span class="label">EMAIL</span>
+                <p>alan.turing1912@gmail.com</p>
+              </div>
+            </div>
+            <div class="item">
+              <i class="fa-solid fa-phone phone"></i>
+              <div>
+                <span class="label">PHONE</span>
+                <p>+44 20 7946 0192</p>
+              </div>
+            </div>
+            <div class="item">
+              <i class="fa-solid fa-location-dot location"></i>
+              <div>
+                <span class="label">LOCATION</span>
+                <p>Bletchley Park, Sherwood Drive,<br />Milton Keynes, MK3 6EB</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="item">
-        <i class="phone"></i>
-        <div>
-            <span class="label">PHONE</span>
-            <p>+44 20 7946 0192</p>
-        </div>
-    </div>
-    <div class="item">
-        <i class="location"></i>
-        <div>
-            <span class="label">LOCATION</span>
-            <p>Bletchley Park, Sherwood Drive,<br>Milton Keynes, MK3 6EB</p>
-        </div>
-    </div>
-</div>
-</div> 
+      </div>
+    </main>
 
-<footer class="footer">
+    <footer class="footer">
       <div class="footer-content">
         <p class="copyright">
           &copy; 2026 Alan Turing Portfolio. All rights reserved.
@@ -103,6 +101,5 @@
         </blockquote>
       </div>
     </footer>
-
-</body>
+  </body>
 </html>
