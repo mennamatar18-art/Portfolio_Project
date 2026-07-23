@@ -48,7 +48,7 @@ h1 {
     background-color: #1a2e3d;
     color: white;
     padding: 30px;
-    flex: 1 1 350px; /* Flex growth with standard base width */
+    flex: 1 1 350px; 
     max-width: 480px;
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
@@ -154,7 +154,6 @@ h3 {
     line-height: 1.4;
 }
 
-/* Media Queries for Fine-tuning Mobile View */
 @media (max-width: 768px) {
     .contact-wrapper {
         flex-direction: column;
